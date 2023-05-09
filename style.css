@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    font-family: 'Pretendard-Regular';
+}
+body, p, h1{
+    padding: 0;
+    margin: 0;
+}
+
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+#wrapper{
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.header img{
+    width: 244px;
+    height: 48px;
+}
+
+.timer{
+    width: 400px;
+    height: 360px;
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.timer-title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 48px;
+}
+
+.timer main{
+    position: relative;
+    display: flex;
+    gap: 22px;
+}
+.timer main:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    width: 312px;
+    height: 1px;
+    background-color: #3D538A;;
+}
+
+
+.hour, .min, .sec{
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-image: url(./images/box.png);
+    width: 80px;
+    height: 80px;
+}
+.hour:before, .min:before, .sec:before{
+    content: '';
+    position: absolute;
+    font-size: 12px;
+    color: #A5B6EE;
+    font-weight: 700;
+    top: -20px;
+}
+.hour:before{
+    content: 'HRS'
+}
+.min:before{
+    content: 'MIN'
+}
+.sec:before{
+    content: 'SEC'
+}
+
+.hour:after, .min:after{
+    content: ':';
+    position: absolute;
+    right: -17px;
+    top: 12px;
+    color: #8198D0;
+}
+
+/* btns */
+button{
+    border: none;
+    background-color: initial;
+}
+.pause{
+    display: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>타이머</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <img src="./images/weniv-logo.svg" alt="위니브 로고">
+        </header>
+        <section class="timer">
+            <h1 class="timer-title">TIMER</h1>
+            <main>
+                <p class="hour">00<span class="a11y-hidden">시간</span></span></p>
+                <p class="min">00<span class="a11y-hidden">분</span></p>
+                <p class="sec">00<span class="a11y-hidden">초</span></p>
+            </main>
+            <div>
+                <button type="button" class="start" onclick="startTimer()">
+                    <img src="./images/button/start-default.png" alt="타이머 시작 버튼">
+                </button>
+                <button type="button" class="pause" onclick="pauseTimer()">
+                    <img src="./images/button/pause.png" alt="타이머 중지 버튼">
+                </button>
+                <button type="button" class="reset" onclick="resetTimer()">
+                    <img src="./images/button/reset-default.png" alt="타이머 리셋 버튼">
+                </button>
+            </div>
+        </section>
+        <footer class="footer">
+            ⓒ WENIV Corp.
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
