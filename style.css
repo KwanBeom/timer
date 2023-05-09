@@ -118,7 +118,13 @@ body, p, h1{
 button{
     border: none;
     background-color: initial;
+    cursor: pointer;
 }
 .pause{
     display: none;
+}
+
+.footer{
+    font-size: 14px;
+    color: #8596BF
 }
